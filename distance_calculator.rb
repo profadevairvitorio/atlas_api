@@ -33,6 +33,6 @@ get '/distance' do
   distance = haversine(lat1, lon1, lat2, lon2)
 
   # Return the result as JSON
-  { distance: "#{distance} m " }.to_json
+  { distance: distance }.to_json
 end
 
